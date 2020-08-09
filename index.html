@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="face-api.min.js"></script>
+  <script defer src="main.js"></script>
+  <title>Face Recognition App</title>
+  <style>
+    :root{
+  --primary: #efb6b2;
+  --secondary: #4e4e4e;
+  --error: #ff4a4a;
+}
+*{
+     margin: 0;
+      padding: 0;
+      box-sizing: border-box; 
+}
+    body {
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+     
+    }
+
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+  
+#container{
+  position: relative;
+  border: 10px solid var(--primary);
+}
+canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+  </style>
+</head>
+<body>
+  <!-- <label>
+    <input type="file"  />
+    <span>+</span>
+  </label> -->
+  <div  id="container">
+    <video id="video" width="720" height="560" autoplay muted></video>
+  </div>
+  
+</body>
+</html>
